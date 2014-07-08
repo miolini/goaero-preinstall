@@ -11,4 +11,5 @@ clean:
 	$(MAKE) -C aerospike-client-c clean
 
 install:
+	cp -r aerospike-client-c/target/*/include/* /usr/local/include
 	cp aerospike-client-c/target/*/lib/* /usr/local/lib
